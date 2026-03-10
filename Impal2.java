@@ -49,14 +49,12 @@ public class Impal2 {
             additionalFee = 10 * peripheralAmount;
         }
 
-        // IF service-time is NOT in business hours
         if (outsideBusinessHours) {
             baseFee = baseFee * 2;
         }
 
         totalFee = baseFee + additionalFee;
 
-        // IF customer is willing to drop off and pick up
         if (dropOffPickup) {
             totalFee = totalFee / 2;
         }

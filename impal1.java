@@ -28,25 +28,24 @@ public class impal1 {
         if (a <= 0 || b <= 0 || c <= 0) {
             System.out.println("Tidak dapat membentuk segitiga.");
         }
-        // Cek aturan segitiga
         else if (a >= b + c || b >= a + c || c >= a + b) {
             System.out.println("Tidak dapat membentuk segitiga.");
         }
         // Sama sisi
         else if (a == b && b == c) {
-            System.out.println("Segitiga Sama Sisi (Equilateral)");
+            System.out.println("Segitiga Sama Sisi");
         }
         // Sama kaki
         else if (a == b || b == c || a == c) {
-            System.out.println("Segitiga Sama Kaki (Isosceles)");
+            System.out.println("Segitiga Sama Kaki");
         }
         // Siku-siku
         else if (a*a == b*b + c*c || b*b == a*a + c*c || c*c == a*a + b*b) {
-            System.out.println("Segitiga Siku-Siku (Right Triangle)");
+            System.out.println("Segitiga Siku-Siku");
         }
-        // Segitiga bebas
+        // Segitiga sembarang
         else {
-            System.out.println("Segitiga Bebas");
+            System.out.println("Segitiga Sembarang");
         }
 
         input.close();

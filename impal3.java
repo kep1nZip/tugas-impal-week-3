@@ -13,8 +13,7 @@ public class impal3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Data pada ACCOUNTS
-        int validAccountNumber = 12345;
+        int validAccountNumber = 6767;
         String statusCode = "valid";
 
         int accountNumber;
